@@ -1,0 +1,26 @@
+title: PourOver LLC
+email: chris@pouroverllc.com
+description: Good ideas are worth the wait
+twitter_username: cburyta
+github_username:  cburyta
+twitter_url: 'https://twitter.com/cburyta'
+github_url: 'http://github.com/cburyta'
+
+permalink: /:year/:month/:day/:title:output_ext
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
