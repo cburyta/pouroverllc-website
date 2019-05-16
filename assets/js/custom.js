@@ -4,7 +4,7 @@
 
  function menu_switch(){
 
-     $(".control-bar").on("click", function(e){
+     $(".themeix-aside .control-bar").on("click", function(e){
           e.preventDefault();
            $(".themeix-aside").toggleClass("active-menu");
      });

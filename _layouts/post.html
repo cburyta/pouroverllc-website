@@ -21,14 +21,20 @@ layout: default
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 mx-auto">
-				<div class="post-img">
-					<img src="{{page.image}}" alt="{{post.title}}">
-					<p>{{page.content}}</p>
+			<div class="col-md-12">
+				<div class="blog-wrapper">
+					<div class="single-blog">
+						<div class="single-blog-wrapper">
+							<div class="single-blog-content">
+<!--                                <img src="{{page.image}}" alt="{{post.title}}">-->
+                                {{page.content}}
 
-					<div class="share-opt">
-						{% include social_share.html %}
-					</div>
+                                <div class="share-opt">
+                                    {% include social_share.html %}
+                                </div>
+							</div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
