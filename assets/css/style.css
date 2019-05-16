@@ -1020,7 +1020,7 @@ object {
 .single-blog-wrapper img{
 	width:100%;
 }
-.single-blog-wrapper span{
+.single-blog-wrapper .posted{
     border-bottom: 1px solid  #d2d2d2;
     max-width: 60%;
     font-weight: 700;

@@ -14,7 +14,7 @@
                     <div class="single-blog-content">
                         <!-- remove  data-target="#blog_details-{{post.post_id}}" -->
                         <a href="{{post.url}}"><h5>{{post.title}}</h5></a>
-                        <span>posted {{post.date | date_to_string}}</span>
+                        <span class="posted">posted {{post.date | date_to_string}}</span>
                         <p>{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
                         <div class="clearfix">
                          <a href="{{post.url}}" class="blog-details-btn btn btn-link float-left">read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>

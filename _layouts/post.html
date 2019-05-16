@@ -26,7 +26,6 @@ layout: default
 					<div class="single-blog">
 						<div class="single-blog-wrapper">
 							<div class="single-blog-content">
-<!--                                <img src="{{page.image}}" alt="{{post.title}}">-->
                                 {{page.content}}
 
                                 <div class="share-opt">
@@ -42,29 +41,3 @@ layout: default
 
 	{% include footer.html %}
 </main>
-
-
-<div class="modal fade" id="blog_details-{{post.post_id}}">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h4 class="modal-title">{{ post.title }}</h4>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span class="fa fa-times" aria-hidden="true"></span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<p>{{ post.content }}</p>
-				<hr>
-				<div class="post-comments">
-					{% include post_comments.html %}
-				</div>
-			</div>
-			<div class="modal-footer">
-				<div class="share-opt">
-					{% include social_share.html %}
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
