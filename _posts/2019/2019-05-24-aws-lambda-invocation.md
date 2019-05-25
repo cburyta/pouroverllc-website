@@ -10,9 +10,7 @@ tags: notes
 
 Lessons learned using `serverless invoke` with long running AWS Lambda functions (2+ minutes).
 
-## RequestResponse (Syncronous)
-
-Read: Synchronous
+## Synchronous `sls invoke --type RequestResponse`
 
 The `aws-sdk` will fire the lambda function, and stay connected... waiting to know what the result of the lambda run is.
 
@@ -34,9 +32,7 @@ If we wanted the CLI to wait for the lambda (and we do) we could call Serverless
 
 The client timeout here is set in miliseconds, so 15 minuts. Now the invoke will try to wait for the lambda to finish before falling back to multiple invocations.
 
-## Event
-
-Read: Asynchronous
+## Asynchronous `sls invoke --type Event`
 
 A lambda could be fired asynchronously probably more often than synchronously.
 
@@ -54,7 +50,7 @@ Serverless uses `aws-sdk` behind the scenes, and follows the default SDK socket 
 
 Remember, this socket timeout is not the lambda timeout. Rather, it's how long the `aws-sdk` waits for the invocation to finish.
 
-This applies only to Syncronous methods (`--type RequestResponse`) since when using Asyncronous methods the `aws-sdk` will not wait for the lambda to finish.
+This applies only to Synchronous methods (`--type RequestResponse`) since when using Asynchronous methods the `aws-sdk` will not wait for the lambda to finish.
 
 ---
 
