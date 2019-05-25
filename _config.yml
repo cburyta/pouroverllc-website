@@ -6,7 +6,7 @@ github_username:  cburyta
 twitter_url: 'https://twitter.com/cburyta'
 github_url: 'http://github.com/cburyta'
 
-permalink: /:year/:month/:day/:title:output_ext
+permalink: /:categories/:year/:month/:day/:title/
 
 markdown: kramdown
 theme: minima
