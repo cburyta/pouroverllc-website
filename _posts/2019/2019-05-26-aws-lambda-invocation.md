@@ -1,20 +1,18 @@
 ---
 layout: post
-title: "Lambda Functions: What persists between invocations?"
+title: "AWS Lambda Functions: Cross-invocation state"
 date:  2019-5-25 05:00
 category: development
 tags: notes
 ---
 
-# Lambda Functions: What persists between invocations?
+AWS Lambdas Functions are great because they let you create online services and processes without the complexity of a web server. It's simple to create issolated functions that are self contained.
 
-AWS Lambdas Functins are great because they let you create online services and processes without the complexity of a web server. It's simple to create issolated functions that are self contained.
+However, even though the complexity gets abstracted away there are still some important concepts to understand regarding what goes on behind the scenes.
 
-However, even though the complexity is abstracted away there are still some important concepts to understand regarding what goes on behind the scenes.
+One such behaviour is that though it's not obvious, there is some persistence between separate invocations of the same Lambda function.
 
-One such behaviour is that though it's not obvious, there is some persistance between separate invocations of the same Lambda function.
-
-## Lifecycle of a Lambda Invocacion
+## Lifecycle of a Lambda Invocation
 
 What exactly happens when a function runs? Per the [AWS Docs](https://docs.aws.amazon.com/lambda/latest/dg/running-lambda-code.html)...
 

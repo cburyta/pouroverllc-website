@@ -2,38 +2,8 @@
 layout: default
 ---
 
-<main class="themeix-main-content">
+<article>
+    <h1>{{page.title}}</h1>
 
-	<!-- Start About -->
-	<section class="full-page clearfix" id="about">
-		<div class="">
-			<div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>{{page.title}}</h1>
-                    </div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End About  -->
-
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="blog-wrapper">
-					<div class="single-blog">
-						<div class="single-blog-wrapper">
-							<div class="single-blog-content">
-                                {{page.content}}
-							</div>
-                        </div>
-                    </div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	{% include footer.html %}
-</main>
+    {{page.content}}
+</article>

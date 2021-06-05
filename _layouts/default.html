@@ -2,53 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
+    <!--    <meta name="description" content=""/>-->
     <title>{{site.title}}</title>
     <!--call favicon icon-->
     <link rel="icon" href="{{site.baseurl}}/assets/images/favicon.png" type="image/x-icon"/>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap.min.css"/>
-    <!-- Font-awesome style -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/font-awesome.min.css"/>
-	<!-- animated style -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/animate.css"/>
-    <!-- asciinema player -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/asciinema-player.css"/>
-    <!-- Custom styles -->
-    <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet"/>
-    <!-- Custom responsive styles -->
-    <link href="{{site.baseurl}}/assets/css/responsive.css" rel="stylesheet"/>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <!-- You should properly set the path from the main file. -->    <!-- Custom responsive styles -->
+    <!--    <link href="{{site.baseurl}}/assets/css/responsive.css" rel="stylesheet"/>-->
     <!--call lora font stylesheet-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/layout.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/header.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/copy-code.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar-scrolled" data-offset="0" class="scrollspy-example loading">
-    {% include header.html %}
+<body>
+{% include header.html %}
 
-     {{ content }}
-
-    <!-- Start Loading ===================================-->
-    <div class="loading">
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
-        </div>
+<section class="container">
+    <div class="row">
+        <main class="column">
+            {{ content }}
+        </main>
     </div>
-    <!-- End Loading ==================-->
-    <!-- Call plugin File -->
-    <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
-    <script src="{{site.baseurl}}/assets/js/popper.min.js"></script>
-    <script src="{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
-    <script src="{{site.baseurl}}/assets/js/jquery.easing.min.js"></script>
-    <script src="{{site.baseurl}}/assets/js/isotope.pkgd.min.js"></script>
-    <script src="{{site.baseurl}}/assets/js/macy.min.js"></script>
-    <script src="{{site.baseurl}}/assets/js/asciinema-player.js"></script>
-    <script src="{{site.baseurl}}/assets/js/custom.js"></script>
+</section>
+
+{% include footer.html %}
+
+<script src="{{site.baseurl}}/assets/js/copy-code.js"></script>
 </body>
 
 </html>
